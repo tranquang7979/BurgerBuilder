@@ -11,7 +11,6 @@
     text-decoration: none;
     height:100%;
     padding: 16px 10px;
-    border-bottom: 4px solid transparent;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -20,7 +19,6 @@
 .NavigationItem a:active,
 .NavigationItem a.active{
     color:#40A4C8;
-    border-bottom: 4px solid #40A4CB;
     text-decoration: none;
 }
 
@@ -35,8 +33,7 @@
     .NavigationItem a{
         color:#fff;
         height:100%;
-        padding:16px 10px;
-        border-bottom: 4px solid transparent;
+        padding:10px 10px;
         text-decoration: none;
     }
     
@@ -44,7 +41,6 @@
     .NavigationItem a:active,
     .NavigationItem a.active{
         background-color:#8F5C2C;
-        border-bottom: 4px solid transparent;
         color:#fff;
         text-decoration: none;
     }
