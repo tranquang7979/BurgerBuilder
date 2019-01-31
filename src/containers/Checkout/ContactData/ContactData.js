@@ -4,6 +4,7 @@ import Button from '../../../components/UI/Button/Button';
 import classes from './ContactData.css';
 import Spinner from '../../../components/UI/Spinner/Spinner';
 import axios from '../../../axios-orders';
+import Input from '../../../components/UI/Input/Input';
 
 class ContactData extends Component{
 
@@ -50,10 +51,11 @@ class ContactData extends Component{
     render(){
         let form = (
             <form>
-                <input className={classes.Input} type="text" name="name" placeholder="Your Name"/>
-                <input className={classes.Input} type="email" name="email" placeholder="Your Email"/>
-                <input className={classes.Input} type="text" name="street" placeholder="Street"/>
-                <input className={classes.Input} type="text" name="postal" placeholder="Postal Code"/>
+                
+                <input inputtype="input" className={classes.Input} type="text" name="name" placeholder="Your Name"/>
+                <input inputtype="input" className={classes.Input} type="email" name="email" placeholder="Your Email"/>
+                <input inputtype="input" className={classes.Input} type="text" name="street" placeholder="Street"/>
+                <input inputtype="input" className={classes.Input} type="text" name="postal" placeholder="Postal Code"/>
                 <Button btnType="Success" clicked={this.orderHandler}>ORDER</Button>
             </form>
         );
